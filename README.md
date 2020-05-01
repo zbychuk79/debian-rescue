@@ -3,4 +3,4 @@
 
 Są tu skrypty, które znajdą się w */usr/local/bin*
 
-Są tu też dokumentacja i inne potrzebne pliki.
+Jest tu też dokumentacja i inne potrzebne pliki.
