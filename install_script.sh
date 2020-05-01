@@ -18,6 +18,8 @@ git clone https://github.com/zbychuk79/debian-rescue.git
 cd debian-rescue
 mv scripts/restic-script /usr/local/bin
 mv scripts/sysupdate /usr/local/bin
+cd ..
+rm -rf debian-rescue
 
 mkdir -p /root/.config
 cd /root/.config
@@ -26,7 +28,7 @@ git clone https://github.com/zbychuk79/mc.git
 cd /root
 git clone https://github.com/zbychuk79/aptitude.git
 mv aptitude/.aptitude .
-#rm -rf aptitude
+rm -rf aptitude
 
 cd /usr/local/bin
 #chmod +x *
