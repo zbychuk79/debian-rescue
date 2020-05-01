@@ -67,7 +67,7 @@ if [ "$mount" = "yes" ]; then
 fi
 
 if [ "$forget" = "yes" ]; then
-    restic -v -r $repo forget $1
+    restic -v -r $repo forget $ID
 fi
 
 if [ "$prune" = "yes" ]; then
