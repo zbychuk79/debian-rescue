@@ -16,8 +16,6 @@ pip3 install telegram-send
 cd /root
 git clone https://github.com/zbychuk79/debian-rescue.git
 cd debian-rescue
-#mv czytaj.txt /
-#mv install_script.sh /
 mv scripts/restic-script /usr/local/bin
 mv scripts/sysupdate /usr/local/bin
 
