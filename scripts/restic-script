@@ -82,4 +82,4 @@ if [ "$stats" = "yes" ]; then
     restic -v -r $repo stats --mode raw-data --cleanup-cache
 fi
 
-telegram-send "$skrypt: Zakończone."
+#telegram-send "$skrypt: Zakończone."
