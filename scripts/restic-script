@@ -1,0 +1,85 @@
+#!/bin/bash
+skrypt=`printf '%s\n' "${0##*/}"`
+
+export RESTIC_PASSWORD="haslo"
+repo="sftp:omv1:/sharedfolders/restic/j-laptop"
+
+usage()
+{
+    echo "
+Jak używać: $skrypt [ -i | -b | -m | -f | -p | -s | -t ]
+
+ -i init
+ -b backup
+ -m mount
+ -f forget ID
+ -p prune
+ -s snapshots
+ -t stats
+
+ -h wyświetlenie tej instrukcji
+"
+}
+
+if [ "$#" = 0 ]; then
+    usage
+    exit 1
+fi
+
+while [ "$1" != "" ]; do
+    case $1 in
+        -i )          init="yes"
+                                ;;
+        -b )          backup="yes"
+                                ;;
+        -m )          mount="yes"
+                                ;;
+        -f )          shift
+                      ID=$1
+                      forget="yes"
+                                ;;
+        -p )          prune="yes"
+                                ;;
+        -s )          snapshots="yes"
+                                ;;
+        -t )          stats="yes"
+                                ;;
+        -h | --help )           usage
+                                exit
+                                ;;
+        * )                     usage
+                                exit 0
+    esac
+    shift
+done
+
+if [ "$init" = "yes" ]; then
+    restic -v -r $repo init
+fi
+
+if [ "$backup" = "yes" ]; then
+    restic -v -r $repo backup \
+	/mnt
+fi
+
+if [ "$mount" = "yes" ]; then
+    restic -v -r $repo mount ~/restic
+fi
+
+if [ "$forget" = "yes" ]; then
+    restic -v -r $repo forget $1
+fi
+
+if [ "$prune" = "yes" ]; then
+    restic -v -r $repo prune
+fi
+
+if [ "$snapshots" = "yes" ]; then
+    restic -v -r $repo snapshots
+fi
+
+if [ "$stats" = "yes" ]; then
+    restic -v -r $repo stats --mode raw-data --cleanup-cache
+fi
+
+telegram-send "$skrypt: Zakończone."

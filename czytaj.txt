@@ -1,0 +1,18 @@
+
+Dodane repozytorium z poprawkami bezpieczenstwa.
+
+Doinstalowano:
+- mc openssh-client wget sudo net-tools curl aptitude zstd
+- unzip gnupg links debtags python3-pip debootstick debootstrap
+- restic rsync fsarchiver dar git
+
+Z repozytorium paczek dla python3 dodano:
+- telegram-send (trzeba go sobie skonfigurowac)
+
+Wstepnie ustawilem Midnight Commander na koncie "root".
+
+Dodalem jeszcze skrypty do "/usr/local/bin":
+- sysupdate
+- restic-script
+- deb-rescue
+
