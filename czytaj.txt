@@ -1,7 +1,7 @@
 
 Dodane repozytorium z poprawkami bezpieczenstwa.
 
-Dodać sekcje: contrib non-free do /etc/apt/sources.list
+Dodac sekcje: contrib non-free do /etc/apt/sources.list
 
 Doinstalowano:
 - mc openssh-client wget sudo net-tools curl aptitude zstd
