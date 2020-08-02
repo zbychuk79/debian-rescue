@@ -16,5 +16,5 @@ Wstepnie ustawilem Midnight Commander na koncie "root".
 Dodalem jeszcze skrypty do "/usr/local/bin":
 - sysupdate
 - restic-script
-- deb-rescue
+- rescue
 
