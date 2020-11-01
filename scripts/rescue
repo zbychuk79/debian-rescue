@@ -49,7 +49,7 @@ stick()
     $czas
     "
     cd $dir
-    img="deb-rescue-$czas.img"
+    img="rescue-$czas.img"
     sudo debootstick rescue $img
     sudo xz -z -9 -T 0 -v $img
     echo "Wygenerowano obraz $img.xz ..."
