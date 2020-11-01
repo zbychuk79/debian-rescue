@@ -17,6 +17,7 @@ git clone https://github.com/zbychuk79/debian-rescue.git
 cd debian-rescue
 mv scripts/restic-script /usr/local/bin
 mv scripts/sysupdate /usr/local/bin
+mv scripts/rescue /usr/local/bin
 cd ..
 rm -rf debian-rescue
 

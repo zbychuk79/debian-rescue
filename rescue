@@ -53,8 +53,6 @@ stick()
     sudo debootstick rescue $img
     sudo xz -z -9 -T 0 -v $img
     echo "Wygenerowano obraz $img.xz ..."
-    #scp $img.xz omv1:/sharedfolders/sysimages/Debian/
-    #telegram-send "Wygenerowano obraz $img.xz ..."
 }
 
 skrypty_chroot()
