@@ -6,7 +6,6 @@
 # Potem można wygenerować image systemu do nagrania na pendrive.
 #
 # Do działania wymagane są programy: debootstrap, debootstick
-# i ew. telegram-send
 #
 
 skrypt=`printf '%s\n' "${0##*/}"`

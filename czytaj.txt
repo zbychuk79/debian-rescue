@@ -9,7 +9,6 @@ Doinstalowano:
 - restic rsync fsarchiver dar
 
 Z repozytorium paczek dla python3 dodano:
-- telegram-send (trzeba go sobie skonfigurowac)
 
 Wstepnie ustawilem Midnight Commander na koncie "root".
 

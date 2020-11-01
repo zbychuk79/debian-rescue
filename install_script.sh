@@ -30,7 +30,6 @@ mv aptitude/.aptitude .
 rm -rf aptitude
 
 cd /usr/local/bin
-#chmod +x *
 echo "rescue" > /etc/hostname
 rm -rf ~/.cache
-#rm /install_script.sh
+rm /install_script.sh
