@@ -49,7 +49,7 @@ stick()
     $czas
     "
     cd $dir
-    img="rescue-$czas.img"
+    img="rescue-$czas-amd64.img"
     sudo debootstick rescue $img
     sudo xz -z -9 -T 0 -v $img
     echo "Wygenerowano obraz $img.xz ..."
