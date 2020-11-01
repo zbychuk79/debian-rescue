@@ -61,8 +61,8 @@ hdir="$HOME"
 mkdir -p ~/tmp
 cd ~/tmp
 cp $0 .
-chmod +x deb-rescue
-sudo mv deb-rescue $dir/$subdir/usr/local/bin
+chmod +x rescue
+sudo mv rescue $dir/$subdir/usr/local/bin
 
 git clone https://github.com/zbychuk79/debian-rescue.git
 cd debian-rescue
