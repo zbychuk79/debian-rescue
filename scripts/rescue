@@ -6,12 +6,12 @@
 # Potem można wygenerować image systemu do nagrania na pendrive.
 #
 # Do działania wymagane są programy: debootstrap, debootstick
-#
+# zainstalowane na systemie Debian lub pochodnym.
 
 skrypt=`printf '%s\n' "${0##*/}"`
 dir="/home/chroot_debian"
 subdir="rescue"
-#mirror="http://omv1:88/debian/"		# Mój lokalny mirror.
+#mirror="http://omv1:88/debian/"		# Lokalny mirror (sieć LAN).
 mirror="http://deb.debian.org/debian/"
 
 usage()

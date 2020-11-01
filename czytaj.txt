@@ -8,12 +8,9 @@ Doinstalowano:
 - unzip gnupg links debtags python3-pip debootstick debootstrap git
 - restic rsync fsarchiver dar
 
-Z repozytorium paczek dla python3 dodano:
-
 Wstepnie ustawilem Midnight Commander na koncie "root".
 
 Dodalem jeszcze skrypty do "/usr/local/bin":
 - sysupdate
 - restic-script
 - rescue
-
