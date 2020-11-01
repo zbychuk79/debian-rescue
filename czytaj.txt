@@ -1,14 +1,20 @@
+----------------------------------------------------------------------
+Po uruchomieniu skryptu /install_script.sh system bedzie wygladal tak:
+----------------------------------------------------------------------
 
 Dodane repozytorium z poprawkami bezpieczenstwa.
 
-Dodac sekcje: contrib non-free do /etc/apt/sources.list
+Trzeba dodac sekcje: contrib non-free do /etc/apt/sources.list
 
 Doinstalowano:
 - mc openssh-client wget sudo net-tools curl aptitude zstd
 - unzip gnupg links debtags python3-pip debootstick debootstrap git
 - restic rsync fsarchiver dar
 
-Wstepnie ustawilem Midnight Commander na koncie "root".
+Wstepnie ustawilem:
+- Midnight Commander
+- Aptitude
+na koncie "root".
 
 Dodalem jeszcze skrypty do "/usr/local/bin":
 - sysupdate
