@@ -64,7 +64,7 @@ cd ~/tmp
 git clone https://github.com/zbychuk79/debian-rescue.git
 cd debian-rescue
 sudo mv czytaj.txt $dir/$subdir
-sudo mv install_script.sh $dir/$subdir
+sudo mv setup.sh $dir/$subdir
 cd ..
 rm -rf debian-rescue
 }

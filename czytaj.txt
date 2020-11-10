@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
-Po uruchomieniu skryptu /install_script.sh system bedzie wygladal tak:
+Po uruchomieniu skryptu /root/install.sh system bedzie wygladal tak:
 ----------------------------------------------------------------------
 
 Dodane repozytorium z poprawkami bezpieczenstwa.

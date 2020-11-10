@@ -1,8 +1,9 @@
 #!/bin/bash
+echo "rescue" > /etc/hostname
 echo "Ustaw hasło dla użytkownika 'root':"
 passwd
 
-cat > /zbychuk.sh << EOF
+cat > /root/install.sh << EOF
 dpkg-reconfigure tzdata
 echo "deb http://security.debian.org/ buster/updates main" >> /etc/apt/sources.list.d/security.list
 apt update
@@ -33,7 +34,8 @@ mv aptitude/.aptitude .
 rm -rf aptitude
 
 cd /usr/local/bin
-echo "rescue" > /etc/hostname
+
 rm -rf ~/.cache
-rm /install_script.sh
+rm ~/install.sh
 EOF
+chmod +x /root/install.sh
