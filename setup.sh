@@ -39,3 +39,4 @@ rm -rf ~/.cache
 rm ~/install.sh
 EOF
 chmod +x /root/install.sh
+rm /setup.sh
