@@ -1,13 +1,15 @@
 #!/bin/bash
 echo "Ustaw hasło dla użytkownika 'root':"
 passwd
+
+cat > /zbychuk.sh << EOF
 dpkg-reconfigure tzdata
 echo "deb http://security.debian.org/ buster/updates main" >> /etc/apt/sources.list.d/security.list
 apt update
 apt upgrade -y
 apt install tasksel dialog -y
 tasksel install standard
-apt install mc openssh-client wget sudo net-tools curl aptitude zstd -y
+apt install openssh-client wget sudo net-tools curl aptitude zstd -y
 apt install unzip gnupg links debtags python3-pip debootstick debootstrap git -y
 apt install restic rsync fsarchiver dar -y
 apt clean
@@ -34,3 +36,4 @@ cd /usr/local/bin
 echo "rescue" > /etc/hostname
 rm -rf ~/.cache
 rm /install_script.sh
+EOF
