@@ -10,7 +10,7 @@ apt update
 apt upgrade -y
 apt install tasksel dialog -y
 tasksel install standard
-apt install openssh-client wget sudo net-tools curl aptitude zstd -y
+apt install mc openssh-client wget sudo net-tools curl aptitude zstd -y
 apt install unzip gnupg links debtags python3-pip debootstick debootstrap git -y
 apt install restic rsync fsarchiver dar -y
 apt clean
