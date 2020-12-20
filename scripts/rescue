@@ -11,7 +11,7 @@
 skrypt=`printf '%s\n' "${0##*/}"`
 dir="/home/chroot_debian"
 subdir="rescue"
-#mirror="http://omv1:88/debian/"		# Lokalny mirror (sieć LAN).
+#mirror="http://q:88/debian/"		# Lokalny mirror (sieć LAN).
 mirror="http://deb.debian.org/debian/"
 
 usage()
