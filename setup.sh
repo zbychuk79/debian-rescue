@@ -34,6 +34,7 @@ mv aptitude/.aptitude .
 rm -rf aptitude
 
 cd /usr/local/bin
+chmod +x *
 
 rm -rf ~/.cache
 rm ~/install.sh
