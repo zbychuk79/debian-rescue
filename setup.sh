@@ -5,7 +5,7 @@ passwd
 
 cat > /root/install.sh << EOF
 dpkg-reconfigure tzdata
-echo "deb http://security.debian.org/ buster/updates main" >> /etc/apt/sources.list.d/security.list
+echo "deb http://security.debian.org/ stable/updates main" >> /etc/apt/sources.list.d/security.list
 apt update
 apt upgrade -y
 apt install tasksel dialog -y
