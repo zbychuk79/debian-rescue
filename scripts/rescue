@@ -30,7 +30,7 @@ dbstrap()
 {
 sudo mkdir -p $dir
 cd $dir
-sudo debootstrap --arch=amd64 buster $subdir $mirror
+sudo debootstrap --arch=amd64 stable $subdir $mirror
 }
 
 debian_chroot()
